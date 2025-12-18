@@ -10,7 +10,7 @@ git branch nombre_rama
 git checkout nombre_rama
 ```
 
--Verificar rama actual
+-Verificar rama actual:
 ```bash
 git branch
 ```
@@ -24,7 +24,12 @@ git branch
 git checkout main
 ```
 
--Traer los cambios
+-Traer los cambios:
 ```bash
 git merge rama_con_cambios
+```
+
+- Subir los cambios a la rama principal:
+```
+git push origin main
 ```
