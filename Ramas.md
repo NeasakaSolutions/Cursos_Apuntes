@@ -31,5 +31,5 @@ git merge rama_con_cambios
 
 - Subir los cambios a la rama principal:
 ```
-git push origin main
+git push origin mainw
 ```
