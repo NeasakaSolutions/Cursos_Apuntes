@@ -1,0 +1,25 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mensaje opcional */
+.info {
+    opacity: 0.6;
+    font-size: 28px;
+}
+
+
