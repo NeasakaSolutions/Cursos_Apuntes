@@ -14,6 +14,17 @@ const altura = 173; // No se puede cambiar el valor
 // Arrays
 let nombres = ["Victor", "Francisco", "Pepe", "Neasaka"];
 
+// Objetos:
+var coche = {
+    modelo: 'Mercedes Clase A',
+    maxima: 500,
+    antiguedad: 2020,
+    mostrarDatos(){
+        // Accedemos a los datos del coche
+        console.log(this.modelo, this.maxima, this.antiguedad);
+    },
+};
+
 // Seleccionar elementos de la pagina
 let divNombres = document.querySelector("#nombres");
 //divNombres.innerHTML = nombres[1]; // Los indices se componen asi: [0, 1, 2];
@@ -72,7 +83,30 @@ const imprimir = () => {
 // Llamamos a la funcion imprimir:
 imprimir();
 
+// Promesas - Representan valores que pueden estar o no
+var saludar = new Promise((resolve, reject) => {
+    setTimeout( () => { // Espera a que algo se ejecute
+        let saludo = "Hola Mundo";
+        //saludo = false;
+
+        if(saludo){
+            resolve(saludo);
+        } else {
+            reject("No hay saludo disponible");
+        };
+
+    }, 2000); // 2 segundos
+});
+
+// Cuando se tenga el resultado se ejecuta el contenido del then
+saludar.then(resultado => {
+    alert(resultado);
+}).catch(e => { // Captura el error en caso de que exista
+    alert(e);
+});
+
 // Mostrar en consola:
 console.log(altura);
+coche.mostrarDatos();
 
 
